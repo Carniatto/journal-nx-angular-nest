@@ -1,0 +1,29 @@
+<h1 class="title">One line Journal</h1>
+
+<input #titleInput class="input is-fullwidth" placeholder="Title" />
+
+<input
+ #bodyInput
+ class="input is-fullwidth"
+ placeholder="Start typing here..."
+ (keydown.ENTER)="onSaveEntry(titleInput, bodyInput)"
+/>
+
+<button
+ class="button is-info"
+ type="submit"
+ (click)="onSaveEntry(titleInput, bodyInput)"
+>
+ save
+</button>
+
+<div class="card" *ngFor="let entry of entries; index as idx">
+ <div class="card-content">
+   <h1 class="title">{{ entry.title }}</h1>
+   <button class="delete is-small" (click)="onDeleteEntry(idx)"></button>
+   <p>"{{ entry.body }}"</p>
+   <p class="is-size-7 has-text-grey-lighter">
+     {{ entry.timestamp | date: 'short' }}
+   </p>
+ </div>
+</div>

@@ -1,0 +1,24 @@
+{
+  "npmScope": "trombonix",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "api": {
+      "tags": []
+    },
+    "journal-e2e": {
+      "tags": []
+    },
+    "journal": {
+      "tags": []
+    },
+    "types": {
+      "tags": []
+    }
+  }
+}

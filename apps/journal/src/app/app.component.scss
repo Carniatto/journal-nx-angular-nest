@@ -1,0 +1,23 @@
+:host {
+  display: block;
+  font-family: sans-serif;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 50px;
+  margin: auto;
+ }
+
+ input {
+  margin-bottom: 8px;
+ }
+
+ .card {
+  margin: 16px;
+  border-radius: 8px;
+ }
+
+ .delete {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+ }
